@@ -39,9 +39,9 @@ print md.is_trained
 
 infered_labels = md.fit(norm_tr_flux, norm_tr_flux)
 
-"""
+
 # save the inferred-labels
-infered_labels = md.fit(a,b)
+
 
 with open("infered_labels-3 labels.csv", "wb") as f:
     writer = csv.writer(f)
@@ -52,7 +52,7 @@ with open("infered_labels-3 labels.csv", "wb") as f:
 # print the inferred labels:
 print infered_labels
 ########################
-"""
+
 
 
 #########################################################
@@ -60,10 +60,4 @@ print infered_labels
 ################################################################################
 
 
-infered_labels = md.fit(norm_tr_flux[:],norm_tr_ivar[:])
-with open("infered_labels-3 labels.csv", "wb") as f:
-    writer = csv.writer(f)
-    writer.writerows(infered_labels)
 
-
-md.theta
